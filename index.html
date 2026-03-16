@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bijjam Nagarjuna Reddy - Aspiring Data Scientist, Java Developer & Python Programmer. Explore my projects, skills, and experience." />
+  <meta name="keywords" content="Data Scientist, Java Developer, Python, Machine Learning, Data Visualization, Portfolio" />
+  <meta name="author" content="Bijjam Nagarjuna Reddy" />
+  <meta property="og:title" content="Bijjam Nagarjuna Reddy | Data Scientist Portfolio" />
+  <meta property="og:description" content="Aspiring Data Scientist with expertise in Python, Java, and Data Visualization." />
+  <title>Bijjam Nagarjuna Reddy | Aspiring Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== CANVAS PARTICLES ========== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">BNR<span class="accent">.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero" class="hero">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-pre-title reveal-up">Hello, World! 👋</p>
+      <h1 class="hero-name reveal-up">BIJJAM<br/><span class="gradient-text">NAGARJUNA REDDY</span></h1>
+      <div class="hero-typing-wrapper reveal-up">
+        <span id="typed-text" class="typed"></span><span class="cursor">|</span>
+      </div>
+      <p class="hero-desc reveal-up">Turning raw data into powerful insights &amp; intelligent solutions.</p>
+      <div class="hero-buttons reveal-up">
+        <a href="#projects" class="btn btn-primary">
+          <span>View My Projects</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get To Know Me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <div class="image-ring"></div>
+          <img src="assets/profile.png" alt="Bijjam Nagarjuna Reddy - Data Scientist" class="profile-img" />
+          <div class="image-badge">
+            <span>🎯</span>
+            <p>Data Science</p>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <h3>Aspiring Data Scientist &amp; Passionate Programmer</h3>
+          <p>I am <strong>Bijjam Nagarjuna Reddy</strong>, a driven and detail-oriented aspiring Data Scientist with a passion for extracting meaningful insights from complex datasets. My journey spans across <strong>Python</strong>, <strong>Java</strong>, machine learning, and data visualization — transforming raw numbers into actionable intelligence.</p>
+          <p>I thrive at the intersection of <strong>analytical thinking</strong> and <strong>creative problem-solving</strong>, constantly exploring new tools and technologies to build data-driven solutions. My mission: make data speak clearly and drive real impact for organizations and people.</p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num" data-target="15">0</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="12">0</span>
+              <span class="stat-label">Technologies Mastered</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num" data-target="25">0</span>
+              <span class="stat-label">Datasets Analyzed</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS SECTION ========== -->
+  <section id="skills" class="skills section">
+    <div class="skills-bg-glow"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-categories">
+
+        <!-- Programming -->
+        <div class="skills-category reveal-up">
+          <h3 class="category-title"><span class="cat-icon">💻</span> Programming</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">☕</div>
+              <h4>Java</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🐍</div>
+              <h4>Python</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+              <span class="skill-percent">88%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Science -->
+        <div class="skills-category reveal-up">
+          <h3 class="category-title"><span class="cat-icon">🧠</span> Data Science</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">🧹</div>
+              <h4>Data Cleaning</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">📊</div>
+              <h4>Data Analysis</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🤖</div>
+              <h4>ML Basics</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+              <span class="skill-percent">70%</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🐼</div>
+              <h4>Pandas</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🔢</div>
+              <h4>NumPy</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+              <span class="skill-percent">85%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Visualization -->
+        <div class="skills-category reveal-up">
+          <h3 class="category-title"><span class="cat-icon">📈</span> Data Visualization</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">📉</div>
+              <h4>Tableau</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🎨</div>
+              <h4>Matplotlib</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🌊</div>
+              <h4>Seaborn</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="83"></div></div>
+              <span class="skill-percent">83%</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">⚡</div>
+              <h4>Power BI</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+              <span class="skill-percent">65%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skills-category reveal-up">
+          <h3 class="category-title"><span class="cat-icon">🛠️</span> Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">🌿</div>
+              <h4>Git</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🐙</div>
+              <h4>GitHub</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">📓</div>
+              <h4>Jupyter</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+              <span class="skill-percent">90%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up">
+          <div class="project-img-wrap">
+            <img src="proj1.png" alt="Data Analysis Dashboard" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary" aria-label="View Live Demo">Live Demo</a>
+              <a href="https://github.com/nagarjunareddy" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" aria-label="View GitHub">GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Data Analysis Dashboard</h3>
+            <p>Interactive multi-chart analytics dashboard visualizing key business metrics using Python and Tableau with real-time filtering and drill-down capabilities.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Pandas</span><span>Tableau</span><span>Matplotlib</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up">
+          <div class="project-img-wrap">
+            <img src="proj2.png" alt="Sales Forecasting Model" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary" aria-label="View Live Demo">Live Demo</a>
+              <a href="https://github.com/nagarjunareddy" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" aria-label="View GitHub">GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Sales Forecasting Model</h3>
+            <p>Time-series ML model predicting future sales using LSTM and Gradient Boosting, achieving 94% accuracy with confidence interval visualization.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Scikit-learn</span><span>NumPy</span><span>Seaborn</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up">
+          <div class="project-img-wrap">
+            <img src="proj3.png" alt="COVID Data Visualization" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary" aria-label="View Live Demo">Live Demo</a>
+              <a href="https://github.com/nagarjunareddy" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" aria-label="View GitHub">GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>COVID-19 Data Visualization</h3>
+            <p>Global interactive heatmap and trend analysis dashboard for COVID-19 pandemic data across 180+ countries with vaccination tracking.</p>
+            <div class="project-tags">
+              <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up">
+          <div class="project-img-wrap">
+            <img src="proj4.png" alt="Student Performance Prediction" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary" aria-label="View Live Demo">Live Demo</a>
+              <a href="https://github.com/nagarjunareddy" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" aria-label="View GitHub">GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Student Performance Prediction</h3>
+            <p>Gradient Boosting ML classifier predicting student academic outcomes with 89% accuracy, featuring feature importance analysis and confusion matrix.</p>
+            <div class="project-tags">
+              <span>Python</span><span>ML</span><span>Scikit-learn</span><span>Seaborn</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE & EDUCATION ========== -->
+  <section id="experience" class="experience section">
+    <div class="exp-bg-glow"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Experience &amp; <span class="gradient-text">Education</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2022 – Present</span>
+            <h3>B.Tech – Computer Science &amp; Engineering</h3>
+            <p class="timeline-sub">Relevant University, India</p>
+            <p>Specialized in Data Science, Machine Learning, and Software Development. Maintained a strong academic record while participating in hackathons and workshops.</p>
+            <span class="timeline-badge education">Education</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2024</span>
+            <h3>Data Science Training Program</h3>
+            <p class="timeline-sub">NPTEL / Coursera / Internshala</p>
+            <p>Completed intensive hands-on training covering Machine Learning fundamentals, Python for Data Science, and Tableau dashboards with real-world capstone projects.</p>
+            <span class="timeline-badge training">Training</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2024</span>
+            <h3>Python for Data Science – IBM</h3>
+            <p class="timeline-sub">IBM SkillsBuild / Coursera</p>
+            <p>Mastered Python libraries including Pandas, NumPy, Matplotlib, and Seaborn for data analysis and professional visualization workflows.</p>
+            <span class="timeline-badge cert">Certification</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2023</span>
+            <h3>Data Visualization Workshop</h3>
+            <p class="timeline-sub">Google / National Hackathon</p>
+            <p>Attended advanced workshops on effective data storytelling, interactive Tableau dashboards, Power BI reports, and presenting insights to non-technical stakeholders.</p>
+            <span class="timeline-badge workshop">Workshop</span>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2022</span>
+            <h3>Intermediate – MPC</h3>
+            <p class="timeline-sub">State Board, Andhra Pradesh</p>
+            <p>Completed secondary education with a strong foundation in Mathematics, Physics, and Computer Science, laying the base for engineering studies.</p>
+            <span class="timeline-badge education">Education</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS SECTION ========== -->
+  <section id="achievements" class="achievements section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Wins</span>
+        <h2 class="section-title">Achievements &amp; <span class="gradient-text">Milestones</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card reveal-up">
+          <div class="ach-icon">🏆</div>
+          <span class="ach-num" data-target="5">0</span>
+          <h4>Hackathons Participated</h4>
+        </div>
+        <div class="achievement-card reveal-up">
+          <div class="ach-icon">📜</div>
+          <span class="ach-num" data-target="8">0</span>
+          <h4>Certifications Earned</h4>
+        </div>
+        <div class="achievement-card reveal-up">
+          <div class="ach-icon">🥇</div>
+          <span class="ach-num" data-target="3">0</span>
+          <h4>Competition Awards</h4>
+        </div>
+        <div class="achievement-card reveal-up">
+          <div class="ach-icon">🌐</div>
+          <span class="ach-num" data-target="4">0</span>
+          <h4>Open Source Contributions</h4>
+        </div>
+        <div class="achievement-card reveal-up">
+          <div class="ach-icon">🎓</div>
+          <span class="ach-num" data-target="6">0</span>
+          <h4>Workshops Attended</h4>
+        </div>
+        <div class="achievement-card reveal-up">
+          <div class="ach-icon">⭐</div>
+          <span class="ach-num" data-target="15">0</span>
+          <h4>GitHub Stars Received</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="contact section">
+    <div class="contact-bg-glow"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Ready to Collaborate?</h3>
+          <p>I'm always open to discussing data science opportunities, collaborative projects, research ideas, or just connecting with fellow tech enthusiasts. Drop me a message!</p>
+          <div class="contact-links">
+            <a href="mailto:nagarjunareddy@example.com" class="contact-link" aria-label="Email">
+              <span class="contact-link-icon">📧</span>
+              <div>
+                <span>Email</span>
+                <p>nagarjunareddy@example.com</p>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/nagarjunareddy" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn">
+              <span class="contact-link-icon">💼</span>
+              <div>
+                <span>LinkedIn</span>
+                <p>linkedin.com/in/nagarjunareddy</p>
+              </div>
+            </a>
+            <a href="https://github.com/nagarjunareddy" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub">
+              <span class="contact-link-icon">🐙</span>
+              <div>
+                <span>GitHub</span>
+                <p>github.com/nagarjunareddy</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card reveal-right" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Data Science Collaboration" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-full" id="submitBtn">
+            <span>Send Message</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <span>✅ Message sent successfully! I'll get back to you soon.</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">BNR<span class="accent">.</span></div>
+      <p class="footer-tagline">Building the future, one dataset at a time.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/nagarjunareddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/nagarjunareddy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:nagarjunareddy@example.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+      <p class="footer-copy">© 2026 Bijjam Nagarjuna Reddy. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
